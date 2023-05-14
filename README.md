@@ -3,8 +3,9 @@
 ##  Getting into Sorting Algorithms and some uses for it.
 
 ### (WIP) List of the Algorithms made:
- 1. Quick Sort;
- 2. Insertion Sort.
+ 1. Quicksort;
+ 2. Insertion Sort;
+ 3. Bogosort.
 
  ### (WIP) List of uses for the Sorting Algorithms:
  1. none yet.
