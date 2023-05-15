@@ -24,7 +24,7 @@ public class QuickSort {
 		}
 		
 		/*
-		 *	Displaying the numbers pre-sorting.
+		 * Displaying the numbers pre-sorting.
 		 */
 		System.out.println("Before: ");
 		printArray(numbers);
@@ -55,7 +55,7 @@ public class QuickSort {
 	}
 	
 	/*
-	 * Method containing the the sorting algorithm.
+	 * Method containing the sorting algorithm.
 	 * 
 	 * Receiving an array of numbers to sort, a low index and a high index.
 	 * 

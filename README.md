@@ -5,7 +5,8 @@
 ### (WIP) List of the Algorithms made:
  1. Quicksort;
  2. Insertion Sort;
- 3. Bogosort.
+ 3. Bogosort;
+ 4. Merge Sort.
 
  ### (WIP) List of uses for the Sorting Algorithms:
  1. none yet.

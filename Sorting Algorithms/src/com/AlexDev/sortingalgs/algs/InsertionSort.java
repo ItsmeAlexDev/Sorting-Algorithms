@@ -24,7 +24,7 @@ public class InsertionSort {
 		}
 		
 		/*
-		 *	Displaying the numbers pre-sorting.
+		 * Displaying the numbers pre-sorting.
 		 */
 		System.out.println("Before: ");
 		printArray(numbers);
