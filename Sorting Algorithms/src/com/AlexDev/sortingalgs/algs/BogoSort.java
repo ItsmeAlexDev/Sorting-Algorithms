@@ -83,12 +83,12 @@ public class BogoSort {
 	 * 
 	 * Receiving an array to check.
 	 */
-	private static boolean isArraySorted(int[] numberList) {
+	private static boolean isArraySorted(int[] array) {
 		/*
 		 * If the array has no elements or only one element,
 		 * then the array is always already sorted.
 		 */
-		if ((numberList == null) || (numberList.length <= 1)) return true;
+		if ((array == null) || (array.length <= 1)) return true;
 		
 		/*
 		 * For arrays with two or more elements, the array can be
@@ -97,8 +97,8 @@ public class BogoSort {
 		 * The for loop just checks if every number in the array is
 		 * higher or equal than the number before.
 		 */
-		for (int i = 0; i < numberList.length - 1; i++) {
-		      if (numberList[i] > numberList[i + 1]) return false;
+		for (int i = 0; i < array.length - 1; i++) {
+		      if (array[i] > array[i + 1]) return false;
 		}
 		
 		/*
