@@ -7,7 +7,8 @@
  2. Insertion Sort;
  3. Bogosort;
  4. Merge Sort;
- 5. Shellsort.
+ 5. Shellsort;
+ 6. Bubble Sort.
 
  ### (WIP) List of uses for the Sorting Algorithms:
  1. none yet.

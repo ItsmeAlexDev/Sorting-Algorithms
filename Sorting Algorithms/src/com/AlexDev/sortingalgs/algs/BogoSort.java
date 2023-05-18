@@ -48,7 +48,7 @@ public class BogoSort {
 	}
 	
 	/*
-	 * Method to do the bogo sort.
+	 * Method containing the bogo sort.
 	 * 
 	 * It just shuffles the list, until it is sorted.
 	 */
