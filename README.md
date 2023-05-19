@@ -8,7 +8,8 @@
  3. Bogosort;
  4. Merge Sort;
  5. Shellsort;
- 6. Bubble Sort.
+ 6. Bubble Sort;
+ 7. Cocktail Shaker Sort.
 
  ### (WIP) List of uses for the Sorting Algorithms:
- 1. none yet.
+ 1. Binary Search.
