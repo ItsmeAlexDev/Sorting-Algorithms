@@ -41,7 +41,7 @@ public class BinarySearch {
 		 * 
 		 * **To print the numbers just change the value of "displayNumberArray" to true.
 		 */
-		printArray(numbers, displayNumberArray);
+		if (displayNumberArray) printArray(numbers);
 		
 		/*
 		 * Trying to make a binary search in an array that is not sorted and printing the result.
@@ -56,7 +56,7 @@ public class BinarySearch {
 		/*POST-SORTING
 		 * (optional) Printing of the numbers array.
 		 */
-		printArray(numbers, displayNumberArray);
+		if (displayNumberArray) printArray(numbers);
 
 		/*
 		 * Making a binary search in an array that is sorted.
@@ -175,15 +175,14 @@ public class BinarySearch {
 	 * 
 	 * Shows "numberToFind" in a easier way to see in a very large array.
 	 */
-	private static void printArray(int[] numbers, boolean display) {
-		if (!display) return;
+	private static void printArray(int[] numbers) {
 		for (int i = 0; i < numbers.length; i++) {
-
 			if (numbers[i] == numberToFind) System.out.println();
 			if (numbers[i] == numberToFind) System.out.println("========");
 			System.out.println(numbers[i]);
 			if (numbers[i] == numberToFind) System.out.println("========");
 			if (numbers[i] == numberToFind) System.out.println();
 		}
+		System.out.println();
 	}
 }

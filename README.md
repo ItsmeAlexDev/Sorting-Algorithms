@@ -12,4 +12,6 @@
  7. Cocktail Shaker Sort.
 
  ### (WIP) List of uses for the Sorting Algorithms:
- 1. Binary Search.
+ 1. Binary Search;
+ 2. Finding the highest value in an array;
+ 3. Finding the lowest value in an array.
