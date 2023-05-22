@@ -1,4 +1,4 @@
-package com.AlexDev.sortingalgs.algs;
+package com.alexdev.sortingalgs.algs;
 
 import java.util.Random;
 

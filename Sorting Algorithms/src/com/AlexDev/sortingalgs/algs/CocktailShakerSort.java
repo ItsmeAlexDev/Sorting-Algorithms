@@ -1,4 +1,4 @@
-package com.AlexDev.sortingalgs.algs;
+package com.alexdev.sortingalgs.algs;
 
 import java.util.Random;
 
@@ -117,7 +117,7 @@ public class CocktailShakerSort {
 	/*
 	 * Simple method to swap two elements in an array.
 	 *
-	 * Receiving an array to print.
+	 * Receiving an array and two indexes.
 	 */
 	private static void swap(int[] array, int index1, int index2) {
 		

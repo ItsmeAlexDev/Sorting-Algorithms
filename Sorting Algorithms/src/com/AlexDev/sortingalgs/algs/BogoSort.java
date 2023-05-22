@@ -1,8 +1,18 @@
-package com.AlexDev.sortingalgs.algs;
+package com.alexdev.sortingalgs.algs;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+/***
+ * us.com.anybs -> eng
+ * 
+ * br.com.anybs -> port
+ * 
+ * com.alexdev -> all in lower case
+ * @since 1.8
+ * @author Alex
+ *
+ */
 public class BogoSort {
 	
 	/*
