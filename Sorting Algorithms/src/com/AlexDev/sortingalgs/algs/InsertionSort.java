@@ -48,7 +48,7 @@ public class InsertionSort {
 	 * 
 	 * Receiving an array of numbers to sort.
 	 * 
-	 * The array is sorted by by putting every element in the order it should be,
+	 * The array is sorted by putting every element in the order it should be,
 	 * one at a time. Example:
 	 * -having an array that looks like this: 2, 8, 5, 7, 9.
 	 * -you can get the first number and put it in the "new"* (sorted) array,
@@ -71,7 +71,7 @@ public class InsertionSort {
 		
 		/*
 		 * The way I'm going to do the algorithm is by having the number that is
-		 * currently getting getting to the right place check if the number before is lower or greater.
+		 * currently getting to the right place, check if the number before is lower or greater.
 		 * 
 		 * If it is lower, then, the current number should be in the right place.
 		 * If it is higher, then, the current number should go to the place of the number before.
