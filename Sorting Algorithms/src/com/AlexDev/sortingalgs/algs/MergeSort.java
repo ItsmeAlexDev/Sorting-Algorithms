@@ -142,13 +142,13 @@ public class MergeSort {
 		int subArrayBSize = subArrayB.length;
 		
 		/*
-		* Getting 3 ints, to be used to iterate thru the two sub-arrays and the merged array.
-		*/
+		 * Getting 3 ints, to be used to iterate thru the two sub-arrays and the merged array.
+		 */
 		int i = 0, j = 0, k = 0;
 		
 		/*
-		* Looping thru both of the sub-arrays
-		*/
+		 * Looping thru both of the sub-arrays
+		 */
 		while (i < subArrayASize && j < subArrayBSize) {
 			/*
 			 * The elements of the 2 sub-arrays are getting compared,
