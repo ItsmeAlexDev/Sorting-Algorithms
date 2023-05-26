@@ -92,7 +92,7 @@ public class ShellSort {
 	 */
 	private static void shellSort(int[] numbers) {
 		/*
-		 * When comparing numbers that should be compared first, it's needed to get the
+		 * When comparing numbers that should be swapped first, it's needed to get the
 		 * distance between them (the value of the gap). As every element and the element 
 		 * at the distance of gap of it are going to be sorted (*swaped, in a sorted way).
 		 * Using the gap of half of the size (length) of the array is the best way to do it.
@@ -124,7 +124,7 @@ public class ShellSort {
 	/*
 	 * Simple method to swap two elements in an array.
 	 *
-	 * Receiving an array to print.
+	 * Receiving an array and two indexes.
 	 */
 	private static void swap(int[] array, int index1, int index2) {
 		
