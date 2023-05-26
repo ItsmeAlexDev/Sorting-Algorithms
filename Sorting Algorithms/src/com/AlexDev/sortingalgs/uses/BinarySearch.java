@@ -5,7 +5,7 @@ import java.util.Random;
 public class BinarySearch {
 	
 	/*
-	 * Value that go into generating an array to search in.
+	 * Values that go into generating an array to search in.
 	 */
 	private final static int numbersLength = 1000;
 	private final static int numbersSize = 100;
