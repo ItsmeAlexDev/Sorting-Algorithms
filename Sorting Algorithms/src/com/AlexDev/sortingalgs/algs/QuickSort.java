@@ -16,11 +16,11 @@ public class QuickSort {
 		/*
 		 * Generating a bunch of random numbers to be sorted.
 		 */
-		Random random = new Random();
+		Random randomGen = new Random();
 		int[] numbers = new int[amountToSort];
 	
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(numbersSize);
+		for (int index = 0; index < numbers.length; index++) {
+			numbers[index] = randomGen.nextInt(numbersSize);
 		}
 		
 		/*
@@ -174,8 +174,8 @@ public class QuickSort {
 	 * Receiving an array to print.
 	 */
 	private static void printArray(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 	}
 	

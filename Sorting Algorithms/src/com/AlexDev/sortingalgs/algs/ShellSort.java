@@ -16,11 +16,11 @@ public class ShellSort {
 		/*
 		 * Generating a bunch of random numbers to be sorted.
 		 */
-		Random random = new Random();
+		Random randomGen = new Random();
 		int[] numbers = new int[amountToSort];
 	
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(numbersSize);
+		for (int index = 0; index < numbers.length; index++) {
+			numbers[index] = randomGen.nextInt(numbersSize);
 		}
 		
 		/*
@@ -111,11 +111,11 @@ public class ShellSort {
 			 * And the numbers being compared, are relative to the value of gap (not 1, that happens in the
 			 * original version of Insertion Sort).
 			 */
-			for (int i = gap; i < numbers.length; i++) {
-				int j = i;
-				while (j >= gap && numbers[j] - numbers[j - gap] < 0) {
-					swap(numbers, j, (j-gap));
-					j-=gap;
+			for (int index = gap; index < numbers.length; index++) {
+				int tempIndex = index;
+				while (tempIndex >= gap && numbers[tempIndex] - numbers[tempIndex - gap] < 0) {
+					swap(numbers, tempIndex, (tempIndex-gap));
+					tempIndex-=gap;
 				}
 			}
 		}
@@ -140,8 +140,8 @@ public class ShellSort {
 	 * Receiving an array to print.
 	 */
 	private static void printArray(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 	}
 }

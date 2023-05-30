@@ -3,16 +3,6 @@ package com.alexdev.sortingalgs.algs;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-/***
- * us.com.anybs -> eng
- * 
- * br.com.anybs -> port
- * 
- * com.alexdev -> all in lower case
- * @since 1.8
- * @author Alex
- *
- */
 public class BogoSort {
 	
 	/*
@@ -26,11 +16,11 @@ public class BogoSort {
 		/*
 		 * Generating a bunch of random numbers to be sorted.
 		 */
-		Random random = new Random();
+		Random randomGen = new Random();
 		int[] numbers = new int[amountToSort];
 	
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(numbersSize);
+		for (int index = 0; index < numbers.length; index++) {
+			numbers[index] = randomGen.nextInt(numbersSize);
 		}
 
 		/*
@@ -78,13 +68,14 @@ public class BogoSort {
 	 * Receiving an array.
 	 */
 	private static void shuffleArray(int[] array) {
-		Random rnd = ThreadLocalRandom.current();
-		for (int i = array.length - 1; i > 0; i--) {
-			int index = rnd.nextInt(i + 1);
-			int a = array[index];
+		Random randomGen = ThreadLocalRandom.current();
+		for (int index = array.length - 1; index > 0; index--) {
+			int rndIndex = randomGen.nextInt(index + 1);
+			
+			int temp = array[rndIndex];
 			      
-			array[index] = array[i];
-			array[i] = a;
+			array[rndIndex] = array[index];
+			array[index] = temp;
 		}
 	}
 	
@@ -107,8 +98,8 @@ public class BogoSort {
 		 * The for loop just checks if every number in the array is
 		 * higher or equal than the number before.
 		 */
-		for (int i = 0; i < array.length - 1; i++) {
-		      if (array[i] > array[i + 1]) return false;
+		for (int index = 0; index < array.length - 1; index++) {
+		      if (array[index] > array[index + 1]) return false;
 		}
 		
 		/*
@@ -124,8 +115,8 @@ public class BogoSort {
 	 * Receiving an array to print.
 	 */
 	private static void printArray(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 	}
 }

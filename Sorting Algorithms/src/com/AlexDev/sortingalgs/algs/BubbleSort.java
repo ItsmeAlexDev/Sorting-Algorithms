@@ -16,11 +16,11 @@ public class BubbleSort {
 		/*
 		 * Generating a bunch of random numbers to be sorted.
 		 */
-		Random random = new Random();
+		Random randomGen = new Random();
 		int[] numbers = new int[amountToSort];
 	
 		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(numbersSize);
+			numbers[i] = randomGen.nextInt(numbersSize);
 		}
 		
 		/*
@@ -58,18 +58,18 @@ public class BubbleSort {
 		 * Doing the process once for every element of the array (the process doesn't happen with the
 		 * last element, as there is no "bubbling" up from there).
 		 */
-		for (int i = 0; i < numbers.length - 1; i++)
+		for (int index = 0; index < numbers.length - 1; index++)
 			/*
 			 * Process of "bubbling" up, going all the way up on the array (not going to the very end,
 			 * as there is no need to "bubble" up if the highest element is already on the last position
 			 * of the array, and decreasing by 1, every time the process is done, to make the process
 			 * slitghly faster).
 			 */
-			for (int j = 0; j < numbers.length - i - 1; j++)
+			for (int bubbleIndex = 0; bubbleIndex < numbers.length - index - 1; bubbleIndex++)
 				/*
 				 * Swapping the numbers, if they are in the wrong order (not sorted).
 				 */
-				if (numbers[j] > numbers[j + 1]) swap(numbers, j, (j+1));
+				if (numbers[bubbleIndex] > numbers[bubbleIndex + 1]) swap(numbers, bubbleIndex, (bubbleIndex+1));
 	}
 	
 	/*
@@ -91,8 +91,8 @@ public class BubbleSort {
 	 * Receiving an array to print.
 	 */
 	private static void printArray(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 	}
 }

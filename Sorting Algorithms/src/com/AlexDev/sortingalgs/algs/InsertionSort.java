@@ -16,11 +16,11 @@ public class InsertionSort {
 		/*
 		 * Generating a bunch of random numbers to be sorted.
 		 */
-		Random random = new Random();
+		Random randomGen = new Random();
 		int[] numbers = new int[amountToSort];
 	
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(numbersSize);
+		for (int index = 0; index < numbers.length; index++) {
+			numbers[index] = randomGen.nextInt(numbersSize);
 		}
 		
 		/*
@@ -79,16 +79,16 @@ public class InsertionSort {
 		 * By repeating this enough times to every element in an array, the array should be sorted.
 		 * 
 		 */
-		for (int i = 1; i < array.length; i++) {
+		for (int index = 1; index < array.length; index++) {
 			/*
 			 * Going thru every number, and getting the current value.
 			 */
-			int currentValue = array[i];
+			int currentValue = array[index];
 			
 			/*
 			 * Getting a temporary variable for the number before the current value.
 			 */
-			int j = i - 1;
+			int beforeValue = index - 1;
 			
 			/*
 			 * The while loop goes on if "j" has not reached the start of the array (where "j" would be -1
@@ -101,16 +101,16 @@ public class InsertionSort {
 			 * 
 			 * The cycle repeats itself until a number lower than the current one is reached or the start of the array.
 			 */
-			while (j >= 0 && array[j] > currentValue) {
-				array[j + 1] = array[j];
-				j--;
+			while (beforeValue >= 0 && array[beforeValue] > currentValue) {
+				array[beforeValue + 1] = array[beforeValue];
+				beforeValue--;
 			}
 
 			/*
 			 * When the cycle ends you can put the current value can be put in front of the place before the
 			 * current value, which should be its right place.
 			 */
-			array[j+1] = currentValue;
+			array[beforeValue+1] = currentValue;
 		}
 	
 	}
@@ -121,8 +121,8 @@ public class InsertionSort {
 	 * Receiving an array to print.
 	 */
 	private static void printArray(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 	}
 }

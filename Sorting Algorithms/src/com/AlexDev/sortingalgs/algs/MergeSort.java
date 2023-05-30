@@ -16,11 +16,11 @@ public class MergeSort {
 		/*
 		 * Generating a bunch of random numbers to be sorted.
 		 */
-		Random random = new Random();
+		Random randomGen = new Random();
 		int[] numbers = new int[amountToSort];
 	
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(numbersSize);
+		for (int index = 0; index < numbers.length; index++) {
+			numbers[index] = randomGen.nextInt(numbersSize);
 		}
 		
 		/*
@@ -144,44 +144,44 @@ public class MergeSort {
 		/*
 		 * Getting 3 ints, to be used to iterate thru the two sub-arrays and the merged array.
 		 */
-		int i = 0, j = 0, k = 0;
+		int iteratorA = 0, iteratorB = 0, iteratorC = 0;
 		
 		/*
 		 * Looping thru both of the sub-arrays
 		 */
-		while (i < subArrayASize && j < subArrayBSize) {
+		while (iteratorA < subArrayASize && iteratorB < subArrayBSize) {
 			/*
 			 * The elements of the 2 sub-arrays are getting compared,
 			 * the lowest one gets added to the merged array.
 			 */
-			if (subArrayA[i] <= subArrayB[j]) {
-				mergedArray[k] = subArrayA[i];
-				i++;
+			if (subArrayA[iteratorA] <= subArrayB[iteratorB]) {
+				mergedArray[iteratorC] = subArrayA[iteratorA];
+				iteratorA++;
 			} else {
-				mergedArray[k] = subArrayB[j];
-				j++;
+				mergedArray[iteratorC] = subArrayB[iteratorB];
+				iteratorB++;
 			}
-			k++;
+			iteratorC++;
 		}
 		
 		/*
 		 * After the elements of the two arrays gets into the merged array, this while loop takes care of
 		 * any leftover element in the first sub-array.
 		 */
-		while (i < subArrayASize) {
-			mergedArray[k] = subArrayA[i];
-			i++;
-			k++;
+		while (iteratorA < subArrayASize) {
+			mergedArray[iteratorC] = subArrayA[iteratorA];
+			iteratorA++;
+			iteratorC++;
 		}
 		
 		/*
 		 * After the elements of the two arrays gets into the merged array, this while loop takes care of
 		 * any leftover element in the second sub-array.
 		 */
-		while (j < subArrayBSize) {
-			mergedArray[k] = subArrayB[j];
-			j++;
-			k++;
+		while (iteratorB < subArrayBSize) {
+			mergedArray[iteratorC] = subArrayB[iteratorB];
+			iteratorB++;
+			iteratorC++;
 		}
 	}
 	
@@ -191,8 +191,8 @@ public class MergeSort {
 	 * Receiving an array to print.
 	 */
 	private static void printArray(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 	}
 }

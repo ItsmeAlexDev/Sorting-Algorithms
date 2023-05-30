@@ -16,11 +16,11 @@ public class CocktailShakerSort {
 		/*
 		 * Generating a bunch of random numbers to be sorted.
 		 */
-		Random random = new Random();
+		Random randomGen = new Random();
 		int[] numbers = new int[amountToSort];
 	
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(numbersSize);
+		for (int index = 0; index < numbers.length; index++) {
+			numbers[index] = randomGen.nextInt(numbersSize);
 		}
 		
 		/*
@@ -79,9 +79,9 @@ public class CocktailShakerSort {
 			/*
 			 * Here is the process of "bubbling" up the highest numbers.
 			 */
-			for (int j = 0; j < numbers.length - 1; j++) {
-				if (numbers[j] > numbers[j + 1]) {
-					swap(numbers, j, (j+1));
+			for (int bubbleIndex = 0; bubbleIndex < numbers.length - 1; bubbleIndex++) {
+				if (numbers[bubbleIndex] > numbers[bubbleIndex + 1]) {
+					swap(numbers, bubbleIndex, (bubbleIndex+1));
 					/*
 					 * If any swap has to be made, "swapped" is set to true.
 					 */
@@ -99,9 +99,9 @@ public class CocktailShakerSort {
 			/*
 			 * Here is the process of "bubbling" down the lowest numbers.
 			 */
-			for (int j = numbers.length; j < 0; j--) {
-				if (numbers[j] > numbers[j + 1]) {
-					swap(numbers, j, (j+1));
+			for (int bubbleIndex = numbers.length; bubbleIndex < 0; bubbleIndex--) {
+				if (numbers[bubbleIndex] > numbers[bubbleIndex + 1]) {
+					swap(numbers, bubbleIndex, (bubbleIndex+1));
 					swapped = true;
 				}
 			}
@@ -133,8 +133,8 @@ public class CocktailShakerSort {
 	 * Receiving an array to print.
 	 */
 	private static void printArray(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 	}
 }
